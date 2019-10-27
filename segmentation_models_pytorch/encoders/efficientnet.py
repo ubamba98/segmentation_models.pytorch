@@ -1,5 +1,6 @@
 from efficientnet_pytorch import EfficientNet
-from efficientnet_pytorch.utils import relu_fn, url_map, get_model_params
+from efficientnet_pytorch.utils import url_map, get_model_params
+from efficientnet_pytorch.utils import MemoryEfficientSwish as relu_fn
 import torch.nn as nn
 import torch
 
