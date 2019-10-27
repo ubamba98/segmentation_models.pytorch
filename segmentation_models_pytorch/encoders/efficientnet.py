@@ -1,9 +1,9 @@
 from efficientnet_pytorch import EfficientNet
 from efficientnet_pytorch.utils import url_map, get_model_params
-from efficientnet_pytorch.utils import MemoryEfficientSwish as relu_fn
+from efficientnet_pytorch.utils import MemoryEfficientSwish 
 import torch.nn as nn
 import torch
-
+relu_fn = MemoryEfficientSwish()
 
 class EfficientNetEncoder(EfficientNet):
     def __init__(self, skip_connections, model_name):
